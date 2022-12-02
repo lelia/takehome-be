@@ -13,7 +13,7 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         # TODO: implement your import command
-        with open('/Users/vdonaire/github_com/takehome-be/sample-data/data.csv') as f:
+        with open('../sample-data/data.csv') as f:
             reader = csv.reader(f)
             next(reader)
             for row in reader:
