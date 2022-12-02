@@ -62,21 +62,6 @@ Provide a link to the source so we can see the original work and any modificatio
 1. Install a version of Python 3 if you do not already have one. We recommend Python 3.8 or newer.
 1. You can use the built-in virtual environment creation within Python to create a sandboxed set of package installs.
    If you already have a preferred method of virtualenv creation, feel free to proceed with your own method.
-   `python -m venv env`
-1. You will need to activate your virtual environment each time you want to work on your project.
-   Run the `activate` script within the `env/bin` folder that was generated.
-1. We have provided a `requirements.txt` file you can use to install the necessary packages.
-   With your virtualenv activated run: `pip install -r requirements.txt`
-1. To run the django server run `python manage.py runserver`
-1. To run the data import command run `python manage.py import_house_data`
-1. You are now setup and ready to start coding.
-
-## Your Notes
-
-1. Fork this repository and clone to your local environment. If you make your fork private, please give access to the `bungalow-engineering` user.
-1. Install a version of Python 3 if you do not already have one. We recommend Python 3.8 or newer.
-1. You can use the built-in virtual environment creation within Python to create a sandboxed set of package installs.
-   If you already have a preferred method of virtualenv creation, feel free to proceed with your own method.
    `python3 -m venv env`.
 1. You will need to activate your virtual environment each time you want to work on your project.
    Run the `activate` script within the `env/bin` folder that was generated `source env/bin/activate`.
