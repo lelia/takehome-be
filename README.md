@@ -81,8 +81,7 @@ Provide a link to the source so we can see the original work and any modificatio
 1. You will need to activate your virtual environment each time you want to work on your project.
    Run the `activate` script within the `env/bin` folder that was generated `source env/bin/activate`.
 1. We have provided a `requirements.txt` file you can use to install the necessary packages.
-   With your virtualenv activated run: `pip3 install -r requirements.txt`
-   `cd /listings`
+   With your virtualenv activated run: `pip3 install -r requirements.txt && cd ./listings`
 1. To run the django server run `python3 manage.py runserver`
 1. To run the data import command run `python3 manage.py import_house_data`
 1. You are now setup and ready to start coding.
