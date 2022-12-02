@@ -68,7 +68,6 @@ Provide a link to the source so we can see the original work and any modificatio
 1. We have provided a `requirements.txt` file you can use to install the necessary packages.
    With your virtualenv activated run: `pip3 install -r requirements.txt && cd ./listings`
 1. To run the django server run `python3 manage.py runserver`
-1. To run the data import command run `python3 manage.py import_house_data`
 1. You are now setup and ready to start coding.
 
 ### Other Notes
@@ -81,12 +80,14 @@ Provide a link to the source so we can see the original work and any modificatio
 ### Example Usage
 
 ```bash
+python3 manage.py sqlmigrate api 0001 # needed to do this first in order to have api_listings table
+python3 manage.py migrate # This seeems to have worked
+python3 manage.py makemigrations api # Not sure what this does
 python3 manage.py createsuperuser # Use the admin site
-python3 manage.py makemigrations api
-python3 manage.py sqlmigrate api 0001
-python3 manage.py migrate
+python3 manage.py import_house_data # Errors resolved after running steps in above order
 
 curl -H 'Accept: application/json; indent=4' <http://127.0.0.1:8000/api/listings/>
+# Did not return any output, unsure if that's expected
 ```
 
 ## Time Spent
