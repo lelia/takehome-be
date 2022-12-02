@@ -71,7 +71,7 @@ Provide a link to the source so we can see the original work and any modificatio
 1. To run the data import command run `python manage.py import_house_data`
 1. You are now setup and ready to start coding.
 
-# Your Notes
+## Your Notes
 
 1. Fork this repository and clone to your local environment. If you make your fork private, please give access to the `bungalow-engineering` user.
 1. Install a version of Python 3 if you do not already have one. We recommend Python 3.8 or newer.
@@ -86,17 +86,23 @@ Provide a link to the source so we can see the original work and any modificatio
 1. To run the data import command run `python3 manage.py import_house_data`
 1. You are now setup and ready to start coding.
 
-python3 manage.py createsuperuser - to use the admin site
+### Other Notes
 
-Having to google most things since I am not familiar with dhango
-Not sure about the character/ integer maz length for the db
-Not the most familiar with working with a db like this + cvs
-Manually made the model still need to figure out how to import the csv and apply the model
+- Had to Google most things since I am not familiar with Django
+- Not sure about the character / integer max length for the DB
+- Not the most familiar with working with a DB like this + CSV data
+- Manually made the model, still need to figure out how to import the CSV and apply the model
+
+### Example Usage
+
+```bash
+python3 manage.py createsuperuser # Use the admin site
 python3 manage.py makemigrations api
 python3 manage.py sqlmigrate api 0001
 python3 manage.py migrate
 
 curl -H 'Accept: application/json; indent=4' <http://127.0.0.1:8000/api/listings/>
+```
 
 ## Time Spent
 
